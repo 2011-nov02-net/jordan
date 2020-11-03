@@ -9,6 +9,7 @@ namespace acronym
             Console.Write("Enter a multi word statement: ");
             string words = Console.ReadLine();
 
+            // split the words into an array
             string[] wordsArray = words.Split(" ");
 
             foreach(string word in wordsArray) {

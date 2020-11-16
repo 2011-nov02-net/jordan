@@ -10,13 +10,13 @@ Create Table Customers(
 	CustomerId INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	FIRSTNAME NVARCHAR(40) NOT NULL,
 	LASTNAME NVARCHAR(40) NOT NULL,
-	CARDNUMBER NVARCHAR(16) NOT NULL,
+	CARDNUMBER NVARCHAR(16) NOT NULL
 )
 
 Create Table Product(
 	ProductId INT NOT NULL IDENTITY(100,1) PRIMARY KEY,
 	NAME NVARCHAR(40) INT NOT NULL,
-	PRICE MONEY NOT NULL;
+	PRICE MONEY NOT NULL
 )
 
 Alter Table Order
@@ -32,7 +32,7 @@ VALUES
 ('Jordan', 'Garcia', 'jg@gmail.com', '888123123455'),
 ('Isidro', 'Buenro', 'Ib@yahoo.com', '342526234455'),
 ('Gabby', 'McDude', 'gb@yahoo.com', '889219454555'),
-('Tina', 'Smith', 'TS@crouton.net', '345819534755') -- inserting tina smith
+('Tina', 'Smith', 'TS@crouton.net', '345819534755'); -- inserting tina smith
 
 
 INSERT Into Product (Name, PRICE)

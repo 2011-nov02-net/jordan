@@ -44,9 +44,10 @@ VALUES
 
 INSERT INTO Order (ProductId, CustomerId)
 VALUES 
-(4,2), --Tina buying an iphone
-(4,1),
-(1,4);
+(4,101), --Tina buying an iphone
+(4,102),
+(1,101),
+(3,105);
 
 Select * From Order -- display all orders of Tina
 Where FirstName='Tina';

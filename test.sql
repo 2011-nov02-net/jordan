@@ -35,4 +35,11 @@ VALUES
 ('Tina', 'Smith', 'TS@crouton.net', '345819534755'),
 
 
-INSERT Into Product (Fir)
+INSERT Into Product (Name, PRICE)
+VALUES 
+("IPAD", 300)
+("IPHONE", 200)
+("IPOD", 100)
+("NANO", 50)
+
+INSERT INTO Order

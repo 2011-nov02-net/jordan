@@ -32,7 +32,7 @@ VALUES
 ('Jordan', 'Garcia', 'jg@gmail.com', '888123123455'),
 ('Isidro', 'Buenro', 'Ib@yahoo.com', '342526234455'),
 ('Gabby', 'McDude', 'gb@yahoo.com', '889219454555'),
-('Tina', 'Smith', 'TS@crouton.net', '345819534755'), -- inserting tina smith
+('Tina', 'Smith', 'TS@crouton.net', '345819534755') -- inserting tina smith
 
 
 INSERT Into Product (Name, PRICE)

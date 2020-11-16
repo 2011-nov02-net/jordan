@@ -48,14 +48,15 @@ VALUES
 (4,1),
 (1,4);
 
-Select * From Order -- display all orders
-Where OrderId=104;
+Select * From Order -- display all orders of Tina
+Where FirstName='Tina';
 
-Select SUM(PRICE) From Order
+Select SUM(PRICE), Product.Name From Order
 Inner Join Product on Product.OrderId = Order.OrderId
-where Product.ProductId = 4
+where Product.Name = 'Iphone'
+Group by (Product.productid);
 
 -- update iphone
 Update Product
 Set PRICE=250
-where ProductId=2;
+where name='IPHONE;

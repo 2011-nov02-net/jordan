@@ -37,10 +37,10 @@ VALUES
 
 INSERT Into Product (Name, PRICE)
 VALUES 
-("IPAD", 300),
-("IPHONE", 200),
-("IPOD", 100),
-("NANO", 50);
+('IPAD', 300),
+('IPHONE', 200),
+('IPOD', 100),
+'"NANO', 50);
 
 INSERT INTO Order (ProductId, CustomerId)
 VALUES 
@@ -60,4 +60,4 @@ Group by (Product.productid);
 -- update iphone
 Update Product
 Set PRICE=250
-where name='IPHONE;
+where name='IPHONE';

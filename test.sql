@@ -53,8 +53,9 @@ Where OrderId=104;
 
 Select SUM(PRICE) From Order
 Inner Join Product on Product.OrderId = Order.OrderId
-where ProductId = 4
+where Product.ProductId = 4
 
+-- update iphone
 Update Product
 Set PRICE=250
 where ProductId=2;

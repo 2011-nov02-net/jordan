@@ -1,0 +1,59 @@
+Relational Databases:
+Like a spreadsheet, with Tables and rows.
+
+Problems you can run into an unormalized databased structure:
+1.update anomoaly
+2.deletion anomaly
+3.insertion anomaly
+
+update anomaly:
+You Modify all the copies of some data but you miss one. (which version of the data you would trust)
+
+deletion anomaly:
+removing one piece of data may lose other important parts of data
+
+Insertion Anomaly:
+you're unable to score certain pieces of data without also having others
+
+functional dependency:
+a relationship between two pieces of data or attribute (x-y) (Y is dependent on x)
+
+candidate key:
+minimal set o fcolumns/attributes that every other column is dependent on.
+
+primary key:
+When we actually implement a table we choose on of the candidate keys. to
+
+foreign key:
+If other tables want to reference a row in reference a row in this table they'll have a copy of our primary key, called a foreign key.
+
+normalization:
+a way to get things to obey certain rules. We call that normalization. Databases have 3 normal forms
+
+1st Normal Form:
+Must Have Atomic Values: Each column must only have
+No Repeating Groups
+each row must be unique (so there must be some candidate keys we choose one and call it the promary key)
+
+2nd Normal Form:
+all columns which are not part of any candidate key, cannot have partial dependency on any of the candidate keys that is, they all have to be fully dependent on every candidate key.if there are no composite keys, 1NF implies 2NF
+
+3rd Normal Form:
+no non Composite Key can depend on any other non-Composite key column
+
+mneumonic:
+"The Keys, The Whole Keys, And Nothing but the Keys"
+
+Referential Integrity:
+Every foreign key value points to something in another table
+
+SQL (Structured Query Language):
+Allow very abstracted operations on a relational DB
+
+There are many variants of SQL. Some Common Variants:
+MySQL
+PostgreSQL
+OracleSQL
+SQLite
+Mangodb
+SQL Server (Transact-SQL/T-SQL)
